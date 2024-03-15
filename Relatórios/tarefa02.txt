@@ -1,0 +1,9 @@
+	ALGORITMO PARA DETECÇÃO DE BORDAS E CONTORNO DAS MESMAS EM IMAGENS JÁ SUAVIZADAS E LIMIARIZADAS PARA A COMPARAÇÃO COM A IMAGEM ORIGINAL
+
+	O algoritmo em questão - que é o mesmo do algoritmo de aplicação de filtros de suavização e limiarização anterior -  acessa
+a pasta de imagens desejada e aplica, primeiramente, o filtron Gaussiano para suavizar a imagem. Após isso, é aplicado um limiar para bina-
+rizar a imagem. Feito isso, esse novo algoritmo acessa essas novas imagens e aplica um operador de Roberts (operação para detecção de bordas
+e identificação transições abruptas de intensidade na imagem) visando deixar mais evidentes as bordas das células. Dessa maneira, é aplicada
+uma função de contorno de bordas, gerando uma imagem final contornada.
+	Após esse processo, a imagem original, isto é, a anterior até mesmo à suavização e limiarização, recebe a sobreposição da imagem
+contornada, permitindo ao usuário uma visão abrangente de quais celulas tiveram suas bordas detectadas.

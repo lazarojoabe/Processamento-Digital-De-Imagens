@@ -1,0 +1,5 @@
+
+	ALGORITMO PARA AUTOMAÇÃO DO PROCESSO DE APLICAÇÃO DE UM FILTRO DE SUAVIZAÇÃO E DE BINARIZAÇÃO EM IMAGENS REALIZADO EM PYTHON.
+
+	O programa acessa a pasta de imagens desejada e aplica, primeiramente, o filtron Gaussiano para suavizar a imagem. Após isso, é aplicado um limiar para bina-
+rizar a imagem. Após isso, essas imagens são salvas em uma pasta especificada
