@@ -1,1 +1,3 @@
-			FLOOD FILL ALGORITHM
+			FLOOD FILL ALGORITHM : Flood fill is an algorithm that determines the area connected to a given cell in a multi-dimensional array.
+
+Suppose we have a colorful image that can be represented as a 2D array of pixels. Each pixel in this 2D array has a color. Our task is to change the color of some area that has a specific color to a new color.
