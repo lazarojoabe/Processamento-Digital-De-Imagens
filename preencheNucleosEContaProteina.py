@@ -28,6 +28,9 @@ for arquivo in arquivos:
         imagem_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         bordas = cv2.Canny(imagem_gray, 100, 200)
         contornos, _ = cv2.findContours(bordas, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        print("Printando os contornos: ", contornos)
+
+        print("Intensidade de cada ponto: ", )
         imagem_preenchida = img.copy()
         cv2.drawContours(imagem_preenchida, contornos, -1, (0, 255, 0), thickness=cv2.FILLED)
         cv2.imwrite(os.path.join(pasta_destino, f"{arquivo}"), imagem_preenchida)
@@ -40,8 +43,10 @@ for arquivo in arquivos:
             proteinas.append(contornos)
         j += 1
 # Calcula a quantidade de proteína por núcleo para cada imagem válida
-for i in range(len(nucleos)):
-    qtd_proteina_por_nucleo = conta_proteina_por_nucleo(nucleos[i], proteinas[i])
-    print(f"Imagem {i+1} {imagens_validas[i]}:")
-    for j, qtd_proteina in enumerate(qtd_proteina_por_nucleo): #enumerate mapeia cada elemento da qtd de proteína com um índice
-        print(f"Núcleo {j+1}: {qtd_proteina} proteínas")
+# for i in range(len(nucleos)):
+#     qtd_proteina_por_nucleo = conta_proteina_por_nucleo(nucleos[i], proteinas[i])
+#     print(f"Imagem {i+1} {imagens_validas[i]}:")
+#     for j, qtd_proteina in enumerate(qtd_proteina_por_nucleo): #enumerate mapeia cada elemento da qtd de proteína com um índice
+#         print(f"Núcleo {j+1}: {qtd_proteina} proteínas")
+
+
