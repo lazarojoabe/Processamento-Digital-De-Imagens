@@ -1,0 +1,6 @@
+			MÉDIA DE PROTEíNA POR NÚCLEO
+	
+	Nesse algoritmo, foram utilizadas as imagens com núcleos detectados para obter as coordenadas deles e, assim,
+pesquisar na imagem original de proteína correspondente o valor da intensidade de cada ponto (do npucleo. Ao fim, foi 
+obtido a média de intensidade de pixel de proteína para cada pixel do núcleo. Dessa forma, é retornada, ao final, a 
+média de proteína de cada núcelo detectado. 
