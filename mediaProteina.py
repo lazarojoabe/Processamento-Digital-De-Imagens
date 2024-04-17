@@ -5,34 +5,6 @@ import numpy as np
 pasta_nucleos = "imagens_validas_nucleos"
 pasta_proteinas = "imagens_validas_proteinas"
 
-# imagens_validas_nucleos = ["CgToll10B_RabbitTube546_ Dorsal647_03_06_2019.lif_Series009_z0_ch00.tif",
-#                             "CgToll10B_RabbitTube546_ Dorsal647_03_06_2019.lif_Series011_z0_ch00.tif",
-#                             "CgToll10B_RabbitTube546_ Dorsal647_03_06_2019.lif_Series027_z0_ch00.tif"]
-
-# imagens_validas_proteinas = ["CgToll10B_RabbitTube546_ Dorsal647_03_06_2019.lif_Series009_z0_ch02.tif",
-#                              "CgToll10B_RabbitTube546_ Dorsal647_03_06_2019.lif_Series011_z0_ch02.tif",
-#                              "CgToll10B_RabbitTube546_ Dorsal647_03_06_2019.lif_Series027_z0_ch02.tif"]
-
-
-
-# def filtraImagensValidas(pastaOrigem, pastaDestinoNucleos, pastaDestinoProteinas):
-
-#     for nome_do_arquivo in os.listdir(pastaOrigem):
-#         # Verifica se o arquivo é uma imagem e termina com _ch00.tif (núcleos)
-#         if nome_do_arquivo.endswith('_ch00.tif'):
-#             # Constrói o caminho de origem e destino para o arquivo
-#             origem = os.path.join(pastaOrigem, nome_do_arquivo)
-#             destino = os.path.join(pastaDestinoNucleos, nome_do_arquivo)
-#             shutil.copy(origem, destino)
-#             # Verifica se o arquivo é uma imagem e termina com _ch02.tif (proteínas)
-#         elif nome_do_arquivo.endswith('_ch02.tif'):
-#             # Constrói o caminho de origem e destino para o arquivo
-#             origem = os.path.join(pastaOrigem, nome_do_arquivo)
-#             destino = os.path.join(pastaDestinoProteinas, nome_do_arquivo)
-#             # Move o arquivo para a pasta de destino de proteínas
-#             shutil.copy(origem, destino)
-
-# filtraImagensValidas()
 def filtraImagensNucleosValidas(pastaOrigem, pastaDestino):
     for nome_do_arquivo in os.listdir(pastaOrigem):
         # Verifica se o arquivo é uma imagem e termina com _ch00.tif (núcleos)
